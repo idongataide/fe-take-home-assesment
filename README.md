@@ -2,6 +2,12 @@
 
 ## Hint to get started
 
+## Notes
+
+- The application uses for its design and layout.
+- The login page does not require authentication; it is for demonstration purposes only and does not validate credentials.
+
+
 ### Install dependencies
 ```
 npm install
