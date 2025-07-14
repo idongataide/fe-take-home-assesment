@@ -1,12 +1,29 @@
 # Field Support for Batteries
 
-## Instructions
+## Hint to get started
 
-Fork this repository.
+### Install dependencies
+```
+npm install
+```
 
-The exercise requirements and test cases are provided in the Word document you received.
+### Run the application
+```
+npm run dev
+```
+The app will be available at the local address shown in your terminal (usually http://localhost:5173).
 
-Use the provided data file at data/battery.json as your data source.
+### Run tests
+```
+npm test
+```
 
-## Good luck!
+## Folder Structure
+- `src/components/` - Vue components
+- `src/data/` - Battery data JSON
+- `src/views/` - Main views/pages
+
+---
+
+## Good luck !
 
