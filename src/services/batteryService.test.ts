@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest';
 import type { BatteryReading } from './batteryService';
 import { getSchoolBatteryReports, groupBy, calculateDeviceHealth } from './batteryService';
 
-// Mock data for i used for testing
+// Mock data for I used for testing
 const readings: BatteryReading[] = [
   { serialNumber: 'A', batteryLevel: 100, timestamp: '2024-07-01T00:00:00Z', academyId: 1, employeeId: 'E1' },
   { serialNumber: 'A', batteryLevel: 80, timestamp: '2024-07-01T12:00:00Z', academyId: 1, employeeId: 'E1' },
