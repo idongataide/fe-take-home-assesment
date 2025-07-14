@@ -13,6 +13,16 @@ import 'element-plus/dist/index.css';
 import Aura from '@primevue/themes/aura';
 import 'primeicons/primeicons.css';
 import PrimeVue from 'primevue/config';
+import Antd from 'ant-design-vue';
+import VueEcharts from 'vue-echarts';
+
+/// <reference types="vite/client" />
+
+declare module '*.vue' {
+  import { DefineComponent } from 'vue';
+  const component: DefineComponent<{}, {}, any>;
+  export default component;
+}
 
 const vueQueryPluginOptions: VueQueryPluginOptions = {
   queryClientConfig: {
@@ -36,4 +46,7 @@ app.use(PrimeVue, {
     preset: Aura
   }
 });
+app.use(Antd);
+app.component('v-chart', VueEcharts);
+
 app.mount('#app');

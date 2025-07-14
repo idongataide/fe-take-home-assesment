@@ -12,7 +12,9 @@ export default defineConfig(({ mode }) => {
     base: BASE_PATH,
     plugins: [vue(), VueDevTools()],
     define: {
-      'process.env.NODE_ENV': JSON.stringify(mode)
+      'process.env.NODE_ENV': JSON.stringify(mode),
+      __VUE_PROD_DEVTOOLS__: false
+      
     },
     resolve: {
       alias: {
@@ -27,7 +29,6 @@ export default defineConfig(({ mode }) => {
     server: {
       host: true,
       proxy: {
-        // if your API lives at http://localhost:8080/api/...
         '/api': {
           target: 'http://localhost:8080',
           changeOrigin: true,
