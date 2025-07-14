@@ -6,6 +6,7 @@
 
 - The application uses for its design and layout.
 - The login page does not require authentication; it is for demonstration purposes only and does not validate credentials.
+- I added a school name for a better ux 
 
 
 ### Install dependencies
